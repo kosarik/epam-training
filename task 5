@@ -1,0 +1,8 @@
+
+x=  prompt("x?");
+var x=parseFloat(x);
+Math.round(x*1000)/1000;
+var intr = Math.floor(x)/1000;
+var decml = (x % 1)*1000;
+var formula = intr+decml;
+console.log(formula);
