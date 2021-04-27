@@ -1,8 +1,0 @@
-a=  prompt("a?");
-b=prompt("b?");
-c=prompt("c?");
-var a=parseInt(a);
-var b=parseInt(b);
-var c=parseInt(c);
-  var formula = ((a-3)*b/2)+c;
-console.log(formula);
