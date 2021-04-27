@@ -1,6 +1,0 @@
-var arr = prompt("Enter your characters"); var i;
-var val = "";
-  for (i = 0; i < arr.length; i++) {
-      val += arr[i]+"=" + arr[i].charCodeAt(0).toString(2) + " ";
-  }
-console.log(val);
