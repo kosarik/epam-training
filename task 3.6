@@ -1,0 +1,6 @@
+var arr = prompt("Enter your characters").split(","); var i;
+let val = new Array();
+  for (var i = 0; i < arr.length; i++) {
+      val = arr[i].charCodeAt(0).toString(2) + " ";
+  }
+console.log(val.length);
