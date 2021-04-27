@@ -1,0 +1,15 @@
+x=prompt("x?");
+y=prompt("y?");
+var x=parseFloat(x);
+var y=parseFloat(y);
+function nicefanta(x,y){
+  if (x+y>180) 
+  {console.log("это не треугольник")}
+   else if
+   ( x = 90  &&  x+y<180)
+   {console.log("прямоугольный треугольник")} else if 
+   ( y = 90  && x+y<180)
+   {console.log("прямоугольный треугольник")}
+   else console.log("треугольник");
+}
+console.log(nicefanta());
