@@ -1,0 +1,11 @@
+
+x=prompt("number?");
+var x=parseInt(x);
+var foo = new Array;
+var i;
+for(i=1; i<x; i++){foo.push(i);};
+  var sum = foo.reduce(function(a, b){
+        return a + b;
+    }, 0);
+    
+    console.log(sum); 
