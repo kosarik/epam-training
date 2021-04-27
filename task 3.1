@@ -1,8 +1,10 @@
-
 x=prompt("number?");
-var x=parseFloat(x);
+var x=parseInt(x);
+var foo = new Array;
 var i;
-for(i=1; i<x; i++){console.log(i);}
+for(i=1; i<x; i++){foo.push(i);};
+foo.reduce((a, b) => a + b);
+console.log(foo);
 
 
 
