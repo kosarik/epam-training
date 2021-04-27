@@ -1,0 +1,6 @@
+x=  prompt("x?");
+y=prompt("y?");
+var x=parseFloat(x);
+var y=parseFloat(y);
+var formula = (Math.sin(x)+Math.cos(y))/(Math.cos(x)-Math.sin(y))*Math.tan(x)*Math.tan(y);
+console.log(formula);
