@@ -1,0 +1,12 @@
+a=  prompt("a?");
+b=prompt("b?");
+var a=parseInt(a);
+var b=parseInt(b);
+var digits = a.toString().split('');
+var realDigits = digits.map(Number);
+var digits1 = b.toString().split('');
+var realDigits1 = digits.map(Number);
+var i; var fanta = []; for(i=0;i<realDigits.length; i++){
+  if (realDigits.includes(realDigits1[i])){fanta.push(realDigits1[i])}
+}
+console.log(fanta);
