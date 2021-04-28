@@ -1,0 +1,11 @@
+var arr = prompt("Enter your numbers separating by comma").split(",");
+arr = arr.map(Number);
+let total = 0;
+let total1 = 0;
+let total2 = 0;
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i] <0) {
+    total++
+  } else if (arr[i] >0){total1++} else {total2++}
+}
+console.log(total); console.log(total1); console.log(total2);
