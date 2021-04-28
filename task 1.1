@@ -1,1 +1,11 @@
-
+var arr = prompt("Enter your numbers separating by comma").split(",");
+arr = arr.map(Number);
+var n = prompt("N");
+let total = 0;
+var n = parseInt(n);
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i] % n == 0) {
+    total += arr[i];
+  }
+}
+console.log(total);
