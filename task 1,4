@@ -1,0 +1,6 @@
+var arr = prompt("Enter your numbers separating by comma").split(",");
+arr = arr.map(Number);
+var b = arr[0];
+arr[0] = arr[arr.length-1];
+arr[arr.length-1]= b;
+console.log(arr);
