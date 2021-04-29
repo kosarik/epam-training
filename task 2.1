@@ -1,0 +1,9 @@
+var String = prompt("string");
+const regex = /\s+/g;
+var found = String.match(regex); var largest = found[0]
+for (let i=0;i<found.length;i++){
+  if (largest < found[i] ) {
+        largest = found[i];
+    }
+}
+console.log(largest.length);
