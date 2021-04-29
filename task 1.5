@@ -1,0 +1,11 @@
+var arr = prompt("Enter your numbers separating by comma").split(",");
+arr = arr.map(Number);
+var i = prompt("i");
+var i = parseInt(i);
+var total = [];
+for (var z = 0; z < arr.length; z++) {
+  if (arr[z] >i) {
+    total.push(arr[z]);
+  } 
+}
+console.log(total); 
