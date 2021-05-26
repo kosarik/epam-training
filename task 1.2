@@ -1,14 +1,12 @@
 class Test1{
     private int a,b;
-    public Test1(){a=1;b=1;}
-    public Test1(int a1,int b1){a=a1;b=b1;}
+    public Test1() {a=1;b=1;}
+    public Test1 (int a1,int b1) {a=a1;b=b1;}
     public int geta(){return a;}
     public int getb(){return b;}
     public void seta(int a1) {a=a1;}
     public void setb(int b1) {b=b1;}
     
-}
-public class Main{
     public static void main(String[] args){
         Test1 obj = new Test1();
         System.out.println(obj.geta());
