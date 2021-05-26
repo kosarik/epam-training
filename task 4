@@ -1,0 +1,48 @@
+package dracons;
+ 
+import java.util.Scanner;
+ 
+public class Dracons {
+ 
+    public static void main(String[] args) {
+ 
+        final int count = 100;
+        int[] arr = new int[count - 1];
+        int x = 0;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) ((Math.random() * 1000));
+            x++;
+            System.out.print(arr[i] + ",");
+            if (x == 30) {
+                System.out.println("");
+                x = 0;
+            }
+        }
+        int max = 0;
+        for (int j = 0; j < arr.length; j++) {
+            if (max < arr[j]) {
+                max = arr[j];
+            }
+ 
+        }
+        System.out.println("");
+        System.out.println("Максимальный элемент = " + max);
+        System.out.println("Введите число: ");
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+        boolean result = false;
+        for (int k = 0; k < arr.length; k++) {
+            if (arr[k] == s) {
+                result = true;
+                break;
+            }
+ 
+        }
+        if (result) {
+            System.out.println("Сокровища найденыы");
+        } else {
+            System.out.println("Сокровища не найдены");
+        }
+    }
+ 
+}
