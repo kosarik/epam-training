@@ -1,5 +1,24 @@
-class1{
-  public int a,b;
-  public int max(){if (a>b) return a; return b;0}
-  public int sum(){return a+b;}
+import java.util.*;
+public class Test1{
+public int a, b;
+  public int max() {
+    if (a > b)
+      return a;
+    return b;
+  }
+  public int sum() {
+    return a+b;
+  }
+     public static void main(String []args){
+         Test1 obj = new Test1();
+Scanner sc= new Scanner(System.in);     
+System.out.print("Enter first number- ");  
+int a= sc.nextInt();  
+System.out.print("Enter second number- ");  
+int b= sc.nextInt();  
+  System.out.println("a: " + obj.a);
+  System.out.println("b: " + obj.b);
+  System.out.println("max: " + obj.max());
+  System.out.println("sum: " + obj.sum());
+     }
 }
